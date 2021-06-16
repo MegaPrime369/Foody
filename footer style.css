@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+footer{
+    border: 2px solid black;
+    text-align: center;
+    padding: 3vh;
+    box-sizing: border-box;
+    margin-top: 50px;
+    font-family: 'Lobster', cursive;
+}
+@media only screen and (max-width: 1250px){
+    footer{
+        margin-top: 20px;
+    }
+}

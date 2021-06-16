@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.services{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.feautures{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.f1, .f2, .f3{
+    width: 19vw;
+    border: 2px solid red;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+h2{
+    margin: 15px 0px;
+    font-family: 'Lobster', cursive;
+    font-size: 100px;
+}
+.f1 img, .f2 img, .f3 img{
+    width: 156px;
+    height: 141px;
+    border: 1px solid black;
+}
+h3{
+    margin-bottom: 10px;
+    font-family: 'Lobster', cursive;
+    font-size: 34px;
+}
+.feautures p{
+    font-family: 'Pacifico', cursive;
+    font-size: 17px;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 1250px){
+    .feautures{
+        flex-direction: column;
+    }
+    .f1, .f2, .f3{
+        width: 91vw;
+        border: 2px solid red;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .feautures{
+        align-items: center;
+    }
+    .feautures p{
+        font-size: 6vw;
+    }
+    .f1 img, .f2 img, .f3 img{
+        height: 37vh;
+        border: 1px solid black;
+        width: 42vw;
+    }
+    h3{
+        font-size: 10vw;
+    }
+    h2{
+        font-size: 16vw;
+    }
+}
+@media only screen and (max-height: 500px){
+    .f1 img, .f2 img, .f3 img{
+        height: 40vh;
+        border: 1px solid black;
+        width: 34vw;
+    }
+}

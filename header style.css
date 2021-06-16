@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: transparent;
+    border: 1px solid black;
+}
+.left{
+    display: flex;
+    width: 38vw;
+    margin: 13px;
+}
+.items{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 100vw;
+    align-items: center;
+}
+.items li a{
+    font-family: 'Lobster', cursive;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 29px;
+    color: black;
+    margin-right: 3vw;
+}
+.right{
+    display: flex;
+    width: 36vw;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn{
+    cursor: pointer;
+    padding: 5px 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    border: 1px solid red;
+    background: white;
+    font-family: 'Pacifico', cursive;
+    transition-property: all;
+    transition-duration: 1s;
+    font-size: 14px;
+}
+.btn:hover{
+    background-color: rgb(223, 49, 49);
+    color: white;
+}
+.btn2{
+    border: 1px solid green;
+}
+.btn2:hover{
+    background-color: rgb(23, 184, 23);
+    color: white;
+}
+#search{
+    height: 34px;
+    border-radius: 3px;
+    border: 1px solid red;
+    font-family: 'Pacifico', cursive;
+}
+
+.intro{
+    width: 100vw;
+    background-image: url("img1.jpg");
+    height: 72vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Pacifico', cursive;
+    color: black;
+    font-size: 4vw;
+}
+.line{
+    border-right: 2px solid black;
+    width: 16.2em;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.anime-typewriter{
+    animation: typewriter 4s steps(40) 0.5s 1 normal both,
+    blinkCursor 500ms steps(40) infinite normal;
+}
+@keyframes typewriter{
+    0%{
+        width: 0em;
+    }
+    100%{
+        width: 16.2em;
+    }
+}
+@keyframes blinkCursor{
+    from{
+        border-right-color: black;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+.icon{
+    display: none;
+    text-decoration: none;
+    margin-bottom: 50px;
+    color: black;
+    transition: all 0.5s;
+}
+.icon:hover{
+    transform: rotate(0.5turn);
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+    width: 12vw;
+}
+@media only screen and (max-width: 1250px){
+    h1{
+        margin-bottom: 10px;
+    }
+    .left{
+        flex-direction: column;
+        margin: 0px;
+    }
+    .items{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 20vh;
+    }
+    .right{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 13vh;
+        width: 100%;
+        margin-top: 13px;
+    }
+    nav{
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+    .icon{
+        display: block;
+        position: fixed;
+        right: 0px;
+    }
+    .button{
+        width: 164px;
+    }
+    .items.active{
+        display: flex;
+    }
+    .right.active{
+        display: flex;
+    }
+}
+
+@media only screen and (max-height: 500px){
+    h1{
+        margin-bottom: 10px;
+    }
+    .left{
+        flex-direction: column;
+        margin: 0px;
+    }
+    .left ul{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 47vh;
+    }
+    .right{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 26vh;
+        width: 100%;
+        margin-top: 13px;
+    }
+    nav{
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+    .icon{
+        display: block;
+        position: fixed;
+        right: 0px;
+    }
+    .button{
+        width: 164px;
+    }
+    .items.active{
+        display: flex;
+    }
+    .right.active{
+        display: flex;
+    }
+}
